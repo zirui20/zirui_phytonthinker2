@@ -188,4 +188,21 @@ powers = [
 ]
 
 challenger1 = random.choice(pokemons)
-challenger2 = random.choice(powers)
+challenger2 = random.choice(pokemons)
+print(challenger1, challenger2)
+
+
+pokemon1_ind = pokemons.index(challenger1)
+pokemon2_ind = pokemons.index(challenger2)
+print(challenger1)
+
+power1 = powers[pokemons.index(powers)]
+power2 = powers[pokemons.index(powers)]
+print(challenger1 + " vs " + challenger2)
+
+if power1 > power2:
+    print(f"Winner: {challenger1}!")
+elif power2 > power1:
+    print(f"Winner: {challenger2}!")
+else:
+    print("It's a draw!")
